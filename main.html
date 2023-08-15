@@ -8,54 +8,21 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<table >
-		<h1>Feedback Form</h1>
-
-		<thead>
-		<tr>
-			<th>Element</th>
-			<th>ID</th> 
-			<th>Type</th>
-			<th>Attributes</th>
-			<th>Label Required<th>
-		</tr>
-		</thead>
-	<tbody>
-		<tr> 
-			<td> Name </td>
-			<td> name</td>
-			<td> text</td>
-			<td> minlength="3", <br>maxlength="50",<br> required</td>
-			<td> Yes</td>
-			
-		</tr>
-		<tr> 
-			<td> Portfolio </td>
-			<td> portfolio</td>
-			<td> URL</td>
-			<td>required</td>
-			<td> Yes</td>
-			
-		</tr>
-		<tr> 
-			<td>Favorite Color </td>
-			<td> favColor</td>
-			<td> Color</td>
-			<td>N/A</td>
-			<td> Yes</td>
-			
-		</tr>
-		<tr> 
-			<td>Likeness  </td>
-			<td>likeness </td>
-			<td>Range</td>
-			<td>min="1", max="100"</td>
-			<td> Yes</td>
-			
-		</tr>
-	</tbody>
-	
-	</table>
+	<form method="post"> 
+		<label for="name">Name </label>
+		<input type="text" id="name" name="name" minlength="3" maxlength="50" required/><br>
+		
+		<label for=" portfolio">Portfolio</label>
+		<input type="url" name="portfolioid" id="portfolio" required/><br>
+		
+		<label for="favColor">Favorite Color</label>
+		<input type="Color" id="favColor" name="favColor" required/><br>
+		
+		<label for="likeness">Likeness</label>
+		<input id="likeness" type="range" name="likeness" min="1" max="100" required/>
+		
+		
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
